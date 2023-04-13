@@ -11,7 +11,9 @@
     <header>
       <ul>
         <li>
-          <a href="../accessible-html/index.html">&larr; Back</a>
+          <a 
+          aria-label="Github page for repository"
+          href="../accessible-html/index.html">&larr; Back</a>
         </li>
       </ul>
     </header>
@@ -29,13 +31,13 @@
         </li>
       </ol>
       <form>
-        <p>First Name:</p>
-        <input type="text" />
-        <p>Last Name:</p>
-        <input type="text" />
-        <div class="button">Submit</div>
+        <label for="first">First Name:</label>
+        <input id="first" type="text" />
+        <label for="last">Last Name:</label>
+        <input id="last" type="text" />
+        <button class="button">Submit</button>
       </form>
-      <img src="../static/kitten.jpeg" />
+      <img src="../static/kitten.jpeg" alt="grey kitten with blue eyes" />
     </div>
   </body>
 </html>
